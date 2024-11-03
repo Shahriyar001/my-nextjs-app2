@@ -6,7 +6,9 @@ export const metadata = {
 };
 
 const HomePage = async () => {
-  const res = await fetch("http://localhost:5000/shoes");
+  const res = await fetch("http://localhost:5000/shoes", {
+    cache: "forse-cache",
+  });
   const shoes = await res.json();
 
   return (
