@@ -1,5 +1,5 @@
 import Image from "next/image";
-import nextImage from "../../accets/464680936_122184249902222561_3179931177788976430_n.jpg";
+import nextImage from "@/accets/464680936_122184249902222561_3179931177788976430_n.jpg";
 
 const GalleryPage = () => {
   return (

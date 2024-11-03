@@ -1,5 +1,10 @@
 import Counter from "../components/Counter.jsx";
 
+export const metadata = {
+  title: "Home Page",
+  description: "This is home Page",
+};
+
 const HomePage = () => {
   return (
     <div>
