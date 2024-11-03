@@ -22,10 +22,15 @@ const HomePage = async () => {
               />
             </figure>
             <div className="card-body">
-              <h2 className="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <h2 className="card-title">
+                {shoe.title}!
+                <div className="badge badge-secondary">$ {shoe.price}</div>
+              </h2>
+              <p>{shoe.description}</p>
+              <p>{shoe.price}</p>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
+                <button className="btn btn-outline btn-primary">Details</button>
+                <button className="btn btn-outline btn-primary">Buy Now</button>
               </div>
             </div>
           </div>
