@@ -1,0 +1,51 @@
+{
+  "posts": [
+    { "id": "1", "title": "a title", "views": 100 },
+    { "id": "2", "title": "another title", "views": 200 }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "shoes": [
+    {
+      "id": 1,
+      "title": "Classic Leather Sneakers",
+      "description": "Timeless white leather sneakers with a comfortable fit, perfect for everyday wear.",
+      "price": 85.99
+    },
+    {
+      "id": 2,
+      "title": "Running Shoes",
+      "description": "Lightweight running shoes designed for comfort and performance, with breathable mesh fabric.",
+      "price": 120.5
+    },
+    {
+      "id": 3,
+      "title": "High-top Canvas Shoes",
+      "description": "Trendy high-top canvas shoes with a durable sole and stylish design, available in multiple colors.",
+      "price": 65.0
+    },
+    {
+      "id": 4,
+      "title": "Formal Leather Oxfords",
+      "description": "Elegant black leather oxfords, ideal for formal occasions and business attire.",
+      "price": 150.75
+    },
+    {
+      "id": 5,
+      "title": "Casual Slip-on Loafers",
+      "description": "Easy-to-wear slip-on loafers with a soft insole and stylish look for casual outings.",
+      "price": 70.3
+    },
+    {
+      "id": 6,
+      "title": "Outdoor Hiking Boots",
+      "description": "Durable and waterproof hiking boots, providing ankle support and grip for outdoor adventures.",
+      "price": 130.9
+    }
+  ]
+}
