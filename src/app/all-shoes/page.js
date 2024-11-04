@@ -1,27 +1,16 @@
-import Link from "next/link.js";
-import Counter from "../components/Counter.jsx";
+import Link from "next/link";
 
-export const metadata = {
-  title: "Home Page",
-  description: "This is home Page",
-};
-
-const HomePage = async () => {
+const AllShoesPage = async () => {
   const res = await fetch("http://localhost:5000/shoes", {
-    next: {
-      revalidate: 30,
-    },
+    cache: "no-store",
   });
   const shoes = await res.json();
-
-  throw new Error("Error from home page");
-
   return (
-    <div className="text-center">
-      <h1 className="text-4xl text-center">Welcome to mext.js </h1>
-      <div className="flex p-10 gap-6 justify-between flex-wrap">
-        {shoes?.slice(0, 3).map((shoe) => (
-          <div key={shoe.id} className="card bg-base-100 w-96 shadow-xl">
+    <div className="text-center my-5">
+      <h1 className="text-center text-2xl">All Shoes</h1>
+      <div className="grid grid-cols-3 gap-6 p-10">
+        {shoes?.map((shoe) => (
+          <div key={shoe.id} className="card bg-base-100  shadow-xl">
             <figure>
               <img
                 src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -43,11 +32,8 @@ const HomePage = async () => {
           </div>
         ))}
       </div>
-      <Link href="/all-shoes">
-        <button className="btn btn-outline btn-primary">See more</button>
-      </Link>
     </div>
   );
 };
 
-export default HomePage;
+export default AllShoesPage;
